@@ -15,7 +15,9 @@ const AboutPane = React.memo(() => {
     <Tab.Pane attached={false} className={styles.wrapper}>
       <Image centered src={logo} size="large" />
       <div className={styles.version}>
-        {t('common.version')} {Config.VERSION}
+        <a href="https://github.com/plankanban/planka/releases">
+          {t('common.version')} {Config.VERSION}
+        </a>
       </div>
     </Tab.Pane>
   );
